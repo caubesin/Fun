@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="icon.css" />
+        <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+        <link rel="stylesheet" type="text/css" href="cssbootrap/bootstrap.min.css" />
+        <title>Icon</title>
+    </head>
+    <body>
+        <script language="javascript">
+            window.onload = function() {
+                do_function();
+            }
+            function do_function () {
+                var like = document.getElementById("like");
+                var comment = document.getElementById("comment");
+                var share = document.getElementById("share");
+                like.onclick = function () {
+                    document.getElementById("input").innerText = "Thích tớ hả (^-^)";
+                }
+                comment.onclick = function() {
+                    document.getElementById("input").innerHTML = "Tính cà khịa tớ hay gì (-.^)";
+                }
+                share.onclick = function() {
+                    document.getElementById("input").innerHTML = "Thấy bài của tớ hay không (^.^)";
+                }
+               }
+        </script>
+        <div class="page">
+            <div id="cat_gif">
+                    <img src="https://i.pinimg.com/originals/f1/2d/32/f12d323152fbbeae2060779700ae1909.gif" refresh="1s" />
+            </div>
+            <div id="text">
+                <p id="input">Tí project cho ngày nghỉ<img src="https://i.pinimg.com/originals/99/51/f6/9951f60b360690589985a59963621783.gif" id="pict" /></p>
+            </div>
+            <div class="block_icon">
+                <ul id="container">
+                    <li><button type="submit" id="like"><i class="far fa-thumbs-up"></i> Like </button></li>
+                    <li><button type="submit" id="comment"><i class="far fa-comment"></i> Comment </button></li>
+                    <li><button type="submit" id="share"><i class="fas fa-share-square"></i> Share </button></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
